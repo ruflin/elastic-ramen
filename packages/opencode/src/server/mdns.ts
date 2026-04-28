@@ -16,7 +16,7 @@ export namespace MDNS {
 
     try {
       const host = domain ?? "ramen.local"
-      const name = `opencode-${port}`
+      const name = `ramen-${port}`
       bonjour = new Bonjour()
       const service = bonjour.publish({
         name,
